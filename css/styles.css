@@ -1,0 +1,162 @@
+/*reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ul, li,
+fieldset, form, label, input, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ul, ol {
+	list-style-type:none;
+}
+a {
+	text-decoration:none;
+}
+html {
+     overflow: -moz-scrollbars-vertical;
+     overflow-y: scroll;
+}
+body {
+	line-height: 1;
+	background-image:url(../images/bg-1.png);}
+	font-family: Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+
+	/*senka za body*/
+	body:before {
+          content: "";
+          position: fixed;
+          top: -20px;
+          left: 0;
+          width: 100%;
+          height: 20px;
+
+            -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+          	   -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+               		box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+          z-index: 100;
+}
+
+.clear {
+	clear:both;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+#page {
+	width: 1000px;
+	height: auto;
+	background-color: gray;
+	position: relative;
+	margin: 0.15em auto;
+}
+.header {
+	width: 1000px;
+	height: 250px;
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+}
+.naslov {
+	width: 1000px;
+	height: 50px;
+	background-image: url(../images/stripe_za_naslov.png);
+	background-repeat: repeat-x;
+	position: absolute;
+	left: 0px;
+	top: 250px;
+	color: #cccccc;
+	font-family: tahoma;
+	padding-top: 5px;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px gray;
+}
+.sidebar {
+	width: 200px;
+	height: 750px;
+	/*background-color: #333333;*/
+	position: absolute;
+	left: 0px;
+	top: 300px;
+	background-image: url(../images/stripe_za_meni.png);
+	background-repeat: repeat-x;
+}
+
+.content {
+	width: 600px;
+	height: 750px;
+	background-color: black;
+	position: absolute;
+	left: 200px;
+	top: 300px;
+	color: #cccccc;
+	font-family: tahoma;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px gray;
+	padding-top: 20px;
+}
+.desna_kolona {
+	width: 200px;
+	height: 750px;
+	/*background-color: black;*/
+	position: absolute;
+	left: 800px;
+	top: 300px;
+	background-image: url(../images/stripe_za_meni.png);
+	background-repeat: repeat-x;	
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+.footer {
+	width: 1000px;
+	height: 100px;
+	background-image: url(../images/stripe_za_footer.png);
+	background-repeat: repeat-x;
+	position: absolute;
+	float: bottom;
+	left: 0px;
+	top: 1050px;
+	color: #666666;
+	text-align: center;
+	padding-top: 40px;
+}
+
+a {
+	color: #cccccc;
+}
+ul.vert-one{margin:0;padding:0;list-style-type:none;display:block;
+font:bold 22px Helvetica, Verdana, Arial, sans-serif;line-height:165%;
+width:200px;}
+
+ul.vert-one li{margin:0;padding:0;border-top:1px solid #080808;
+border-bottom:1px solid #080808;}
+
+ul.vert-one li a{display:block;text-decoration:none;color:#666666;
+background:#000000;padding:0 0 0 20px;width:180px;}
+
+ul.vert-one li a:hover{
+background:#1b1b1b url("images/vert-one_arrow.gif") no-repeat 0 9px;}
+
+ul.vert-one li a.current,ul.vert-one li a.current:hover{
+background:#080808 url("images/vert-one_arrow.gif") no-repeat 0 9px;}
