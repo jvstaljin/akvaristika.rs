@@ -5,30 +5,21 @@
  	<meta name="keywords" content="key, words" />
     <meta charset="utf-8">
 	<meta name="description" content="description" />
-	<!--promenio title iz vezba u pravilno :)-->
-	<title>akvaristika.rs</title>
+	<title>akvaristika-kovacevic</title>
 
-		<!--css linkas ovako i samo ovako, ono @import je lose, radi i tako al vise cima browser
-			isto tako izbacio sam type="text/css" posto je html5 to ne treba, nisam sigurran i za
-			ovo media, mislim da i to moze da se izbaci al neka ga za sada, isto tako i type="text/javascript"
-			ne treba
-		-->
 		<link rel="stylesheet" href="css/styles.css"  media="screen" />
 
-		<link rel="stylesheet" href="nivo-slider/nivo-slider.css" media="screen" />
-		<link rel="stylesheet" href="nivo-slider/themes/default/default.css" media="screen" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="nivo-slider/jquery.nivo.slider.pack.js"></script>
+	<link rel="stylesheet" href="nivo-slider/nivo-slider.css" media="screen" />
+	<link rel="stylesheet" href="nivo-slider/themes/default/default.css" media="screen" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="nivo-slider/jquery.nivo.slider.pack.js"></script>
+
 
 
 </head>
 
 <body>
-	<!--uvek komentuj divove gde se zavrsavaju, npr ovaj se zavrsava skroz dole
-	komentuj da znas gde je sta, olaksace ti rad :) komentovao sam sve divove gde
-	se zatvaraju, naravno ne moras da kometujes divove koji se zatvaraju u 2 reda
-	samo ove dugacke, komentovao sam id=page i class=header
-	-->
+
 	<div id="page">
 
 		<div class="header"><!--slider-->
@@ -46,40 +37,44 @@
 		        	<img src="nivo-slider/demo/images/10.png"/>
 	    		</div>
 			</div>
-			<!--ovo cemo staviti u poseban fajl, tipa akvaristika.js pa cemo ga linkovati isto tako
-			ne znam zasto je window.load uglavom treba da bude document.ready, probacemo :)-->
+
 			<script type="text/javascript">
 			$(window).load(function() {
-			    $('#slider').nivoSlider();
+			$('#slider').nivoSlider();
 			});
 			</script>
 
-		</div><!--/.header-->
+		</div>
 
-		<div class="naslov">AKVARISTIKA KOVAČEVIĆ</div>
+		<div class="naslov">
+			<h1>AKVARISTIKA KOVAČEVIĆ</h1>
+		</div>
 
 		<div class="sidebar">
 			<ul class="vert-one">
-				<li><a href="#">početna</a></li>
-				<li><a href="#">asortiman</a></li>
-				<li><a href="#">članci</a></li>
-				<li><a href="#">galerija</a></li>
-				<li><a href="#">oglasi</a></li>
-				<li><a href="#">kontakt</a></li>		
+				<li><a href="index.html" title="pocetna">početna</a></li>
+				<li><a href="asortiman.html" title="asortiman">asortiman</a></li>
+				<li><a href="clanci.html" title="clanci">članci</a></li>
+				<li><a href="galerija.html" title="galerija">galerija</a></li>
+				<li><a href="oglasi.html" title="oglasi">oglasi</a></li>
+				<li><a href="kontakt.html" title="kontakt">kontakt</a></li>		
 			</ul>
 		</div>
 
 		<div class="content">
-			<img src="images/11.png">
+			<img src="images/123.png">
 		</div>
-		<!--ne znam sta ti je ovaj prazan div al videcemo, ako ne treba delete-->
+
 		<div class="desna_kolona">
+			<div class="podvodni_svet">
+				<a href="http://www.podvodnisvet.com/podvodnisvet.html" target="_blank"><img src="images/podvodni_svet.png" title="podvodni svet" border="2"></a>
+			</div>
 		</div>
-		<!--dodat title i target u a tagu, target otvara prozor u novom tabu, a title pokazuje naslov kad predjes misem preko-->
+
 		<div class="footer">Design by <a href="http://www.facebook.com/JeretikusGlupus" title="jvstaljin" target="_blank">jvstaljin</a>
 		</div>
 
-	</div><!--/#page-->
+	</div>
 
 </body>
 

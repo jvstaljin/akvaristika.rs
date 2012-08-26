@@ -17,29 +17,33 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 ul, ol {
 	list-style-type:none;
 }
+
 a {
 	text-decoration:none;
 }
+
 html {
      overflow: -moz-scrollbars-vertical;
      overflow-y: scroll;
 }
+
 body {
 	line-height: 1;
-	background-image:url(../images/bg-1.png);}
+	background-image:url(../images/low_contrast_linen.png);}
 	font-family: Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
-
-	/*senka za body*/
+}
+	/*shadow - body*/
 	body:before {
           content: "";
           position: fixed;
@@ -55,15 +59,6 @@ body {
           z-index: 100;
 }
 
-.clear {
-	clear:both;
-}
-.left {
-	float:left;
-}
-.right {
-	float:right;
-}
 #page {
 	width: 1000px;
 	height: auto;
@@ -71,6 +66,7 @@ body {
 	position: relative;
 	margin: 0.15em auto;
 }
+
 .header {
 	width: 1000px;
 	height: 250px;
@@ -78,6 +74,7 @@ body {
 	left: 0px;
 	top: 0px;	
 }
+
 .naslov {
 	width: 1000px;
 	height: 50px;
@@ -87,21 +84,22 @@ body {
 	left: 0px;
 	top: 250px;
 	color: #cccccc;
-	font-family: tahoma;
+	font-family: Tahoma;
 	padding-top: 5px;
 	font-size: 40px;
 	text-align: center;
 	text-shadow: 1px 1px 1px #000, 3px 3px 5px gray;
 }
+
 .sidebar {
 	width: 200px;
 	height: 750px;
-	/*background-color: #333333;*/
 	position: absolute;
 	left: 0px;
 	top: 300px;
-	background-image: url(../images/stripe_za_meni.png);
-	background-repeat: repeat-x;
+	background-image: url(../images/oscar.png);
+	background-repeat: no-repeat;
+
 }
 
 .content {
@@ -113,21 +111,28 @@ body {
 	top: 300px;
 	color: #cccccc;
 	font-family: tahoma;
+	text-align: center;
 	text-shadow: 1px 1px 1px #000, 3px 3px 5px gray;
 	padding-top: 20px;
 }
+
 .desna_kolona {
 	width: 200px;
 	height: 750px;
-	/*background-color: black;*/
 	position: absolute;
 	left: 800px;
 	top: 300px;
-	background-image: url(../images/stripe_za_meni.png);
-	background-repeat: repeat-x;	
+	background-image: url(../images/oscar2.png);
+	background-repeat: no-repeat;	
 	opacity:0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
+		.podvodni_svet {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+}
+
 .footer {
 	width: 1000px;
 	height: 100px;
@@ -145,8 +150,10 @@ body {
 a {
 	color: #cccccc;
 }
+
+/* za vertikalni meni*/
 ul.vert-one{margin:0;padding:0;list-style-type:none;display:block;
-font:bold 22px Helvetica, Verdana, Arial, sans-serif;line-height:165%;
+font-family:'Allura',cursive;line-height:165%; font-size:22px;font-style:bold;
 width:200px;}
 
 ul.vert-one li{margin:0;padding:0;border-top:1px solid #080808;
@@ -156,7 +163,8 @@ ul.vert-one li a{display:block;text-decoration:none;color:#666666;
 background:#000000;padding:0 0 0 20px;width:180px;}
 
 ul.vert-one li a:hover{
-background:#1b1b1b url("images/vert-one_arrow.gif") no-repeat 0 9px;}
+background:#1b1b1b url("images/vert-one_arrow.png") no-repeat 0 9px;}
 
 ul.vert-one li a.current,ul.vert-one li a.current:hover{
-background:#080808 url("images/vert-one_arrow.gif") no-repeat 0 9px;}
+background:#080808 url("images/vert-one_arrow.png") no-repeat 0 9px;}
+
